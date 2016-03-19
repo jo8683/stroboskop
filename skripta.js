@@ -34,7 +34,7 @@ window.addEventListener('load', function() {
 			ustavi = false;
 		} else {
 			novId = (id+1) % vrednosti.length;
-			timeout = Math.floor((Math.random() * (maxCas-minCas)) + minCas);
+			timeout = Math.floor(Math.random() * (document.querySelector("#max")- document.querySelector("#min")) + document.querySelector("#min"));
 			setTimeout(function() {spremeniBarvo(novId)} , timeout);
 		}		
 	}
